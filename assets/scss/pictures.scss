@@ -1,0 +1,47 @@
+.pictures {
+  img {
+    min-height: 100%;
+    object-fit: cover;
+  }
+
+  .card {
+    .card-img-overlay {
+      opacity: 0;
+      background-color: rgba(0,0,0,.65);
+      transition: opacity .4s ease-in-out;
+    }
+
+    &:hover {
+      .card-img-overlay {
+        opacity: 1;
+      }
+    }
+  }
+
+}
+
+.navigation-pagination {
+
+  .pagination {
+    .page-link {
+      height: 40px;
+      width: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: black;
+      border-color: rgba(0,0,0,.25);
+      background-color: rgba(255,255,255,.5);
+
+      i {
+        color: rgba(0,0,0,.8);
+      }
+    }
+
+    .active .page-link {
+      border-color: blue;
+      color: white;
+      background-color: rgba(0, 0, 255,.5);
+    }
+  }
+}
