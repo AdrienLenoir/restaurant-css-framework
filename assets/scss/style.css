@@ -1,3 +1,16 @@
+body {
+  background-color: #E8AFA0;
+  font-family: 'Merienda', cursive;
+}
+
+.page-title {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.page-sub-title {
+  color: rgba(0, 0, 0, 0.6);
+}
+
 .pictures img {
   min-height: 100%;
   -o-object-fit: cover;
@@ -6,7 +19,7 @@
 
 .pictures .card .card-img-overlay {
   opacity: 0;
-  background-color: rgba(0, 0, 0, 0.65);
+  background-color: rgba(146, 125, 106, 0.65);
   -webkit-transition: opacity .4s ease-in-out;
   transition: opacity .4s ease-in-out;
 }
@@ -27,19 +40,23 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: black;
-  border-color: rgba(0, 0, 0, 0.25);
-  background-color: rgba(255, 255, 255, 0.5);
+  color: #404040;
+  border-color: rgba(146, 125, 106, 0.25);
+  background-color: rgba(255, 230, 201, 0.6);
 }
 
 .navigation-pagination .pagination .page-link i {
-  color: rgba(0, 0, 0, 0.8);
+  color: #404040;
 }
 
 .navigation-pagination .pagination .active .page-link {
-  border-color: blue;
   color: white;
-  background-color: rgba(0, 0, 255, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.navbar {
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .jumbo {
@@ -53,8 +70,13 @@
   background-color: #E8AFA0;
 }
 
+.card {
+  background-color: rgba(255, 230, 201, 0.25);
+}
+
 .footer {
-  background-color: lightgreen;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .pictures img {
@@ -65,7 +87,7 @@
 
 .pictures .card .card-img-overlay {
   opacity: 0;
-  background-color: rgba(0, 0, 0, 0.65);
+  background-color: rgba(146, 125, 106, 0.65);
   -webkit-transition: opacity .4s ease-in-out;
   transition: opacity .4s ease-in-out;
 }
@@ -86,18 +108,45 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: black;
-  border-color: rgba(0, 0, 0, 0.25);
-  background-color: rgba(255, 255, 255, 0.5);
+  color: #404040;
+  border-color: rgba(146, 125, 106, 0.25);
+  background-color: rgba(255, 230, 201, 0.6);
 }
 
 .navigation-pagination .pagination .page-link i {
-  color: rgba(0, 0, 0, 0.8);
+  color: #404040;
 }
 
 .navigation-pagination .pagination .active .page-link {
-  border-color: blue;
   color: white;
-  background-color: rgba(0, 0, 255, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.restaurant-card h5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.restaurant-card h5 svg {
+  margin-right: 6px;
+  fill: #D0E09D;
+  height: 20px;
+  width: 20px;
+}
+
+.calendar .date {
+  border: 2px solid #E8AFA0 !important;
+}
+
+.calendar .date .day {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.calendar .date .hour {
+  color: #fffefc;
 }
 /*# sourceMappingURL=style.css.map */
