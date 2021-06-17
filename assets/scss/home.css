@@ -8,4 +8,9 @@
 .page {
   background-color: #E8AFA0;
 }
+
+.facebook, .twitter, .linkedin {
+  height: 60px;
+  width: 60px;
+}
 /*# sourceMappingURL=home.css.map */
