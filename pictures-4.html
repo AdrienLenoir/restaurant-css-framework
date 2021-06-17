@@ -8,13 +8,55 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-<main class="container">
-    <h1 class="text-center mt-5 mb-4">Galerie photo</h1>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark p-4" style="background-color: rgba(0,0,0, .7);">
+        <div class="container-fluid">
+            <a class="navbar-brand text-uppercase position-absolute" href="#" style="font-family: 'Pacifico', cursive;margin-right: 50px">
+                <span style="color: #008e44;margin-right: 10px">La  </span>
+                <span style="color: #f7f7f7">mam</span>
+                <span style="color: #c82935">ma</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white pe-4" style="font-size: 1.3em" aria-current="page" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white pe-4" style="font-size: 1.3em" href="menu.html">Carte</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white pe-4" style="font-size: 1.3em" href="pictures.html">Gallerie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white pe-4" style="font-size: 1.3em" href="restaurant.html">Infos & Accès</a>
+                    </li>
+                    <li class="nav-item me-0 pe-0">
+                        <a class="nav-link text-white" style="font-size: 1.3em" href="Formulaire.html">Réservations & Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
 
+<div class="jumbotron jumbotron-fluid mt-5 mb-5">
+    <div class="container">
+        <h1 class="page-title display-4">Galerie photo</h1>
+        <p class="lead">Différentes photos du restaurant ainsi que différents plats.</p>
+    </div>
+</div>
+
+<main class="container">
     <nav aria-label="navigation" class="navigation-pagination sticky-top top-100 p-3 rounded mb-2">
         <ul class="pagination justify-content-center m-0">
             <li class="page-item">

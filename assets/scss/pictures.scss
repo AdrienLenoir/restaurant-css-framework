@@ -7,7 +7,7 @@
   .card {
     .card-img-overlay {
       opacity: 0;
-      background-color: rgba(0,0,0,.65);
+      background-color: rgba(146, 125, 106,.65); // rgba(0,0,0,.65)
       transition: opacity .4s ease-in-out;
     }
 
@@ -29,19 +29,18 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      color: black;
-      border-color: rgba(0,0,0,.25);
-      background-color: rgba(255,255,255,.5);
+      color: #404040;
+      border-color: rgba(146, 125, 106,.25);
+      background-color: rgba(255, 230, 201,.6);
 
       i {
-        color: rgba(0,0,0,.8);
+        color: #404040;
       }
     }
 
     .active .page-link {
-      border-color: blue;
       color: white;
-      background-color: rgba(0, 0, 255,.5);
+      background-color: rgba(0, 0, 0,.7);
     }
   }
 }
