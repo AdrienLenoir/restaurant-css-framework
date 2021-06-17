@@ -1,0 +1,29 @@
+.restaurant-card {
+  h5 {
+    display: flex;
+    align-items: center;
+
+    svg {
+      margin-right: 6px;
+      fill: #D0E09D;
+      height: 20px;
+      width: 20px;
+    }
+  }
+}
+
+.calendar {
+
+  .date {
+    border: 2px solid #E8AFA0 !important;
+
+    .day {
+      color: rgba(0,0,0, .6);
+    }
+
+    .hour {
+      color: lighten(#FFE6C9, 10);
+    }
+
+  }
+}

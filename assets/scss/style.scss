@@ -1,3 +1,16 @@
+body {
+  background-color: #E8AFA0;
+  font-family: 'Merienda', cursive;
+}
+
+.page-title {
+  color: rgba(0,0,0, .7);
+}
+
+.page-sub-title {
+  color: rgba(0,0,0, .6);
+}
+
 @import "pictures";
 @import "home";
 @import "pictures";
