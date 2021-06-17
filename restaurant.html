@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Restaurant</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<main class="container">
+    <h1 class="text-center mt-5 mb-4">Á propos du restaurant</h1>
+
+    <div class="card mb-3 shadow-lg bg-gradient rounded border-0">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="assets/images/pictures-8.jpg" class="w-100" alt="restaurant">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body p-5">
+                    <h3 class="card-title mb-3">Restaurant</h3>
+
+                    <h5>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#61ad80" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                        </svg>
+                        Adresse
+                    </h5>
+                    <p>20, rue des restaurants, 6000 Charleroi</p>
+
+                    <h5>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#61ad80" class="bi bi-calendar-range" viewBox="0 0 16 16">
+                            <path d="M9 7a1 1 0 0 1 1-1h5v2h-5a1 1 0 0 1-1-1zM1 9h4a1 1 0 0 1 0 2H1V9z"/>
+                            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                        </svg>
+                        Horaire
+                    </h5>
+
+                    <div class="row g-0 text-center">
+                        <div class="col-6 col-md-3 p-1 bg-gradient border rounded">
+                            <h4 >Lundi</h4>
+                            <p class="m-0 text-info">12h - 14h / 17h - 20h</p>
+                        </div>
+                        <div class="col-6 col-md-3 p-1 bg-gradient border rounded">
+                            <h4>Mardi</h4>
+                            <p class="m-0 text-info">12h - 14h / 17h - 20h</p>
+                        </div>
+                        <div class="col-6 col-md-3 p-1 bg-gradient border rounded">
+                            <h4>Mercredi</h4>
+                            <p class="m-0 text-info">12h - 14h / 17h - 20h</p>
+                        </div>
+                        <div class="col-6 col-md-3 p-1 bg-gradient border rounded">
+                            <h4>Jeudi</h4>
+                            <p class="m-0 text-info">12h - 14h / 17h - 20h</p>
+                        </div>
+                        <div class="col-6 col-md-3 p-1 bg-gradient border rounded">
+                            <h4>Vendredi</h4>
+                            <p class="m-0 text-info">12h - 14h / 17h - 20h</p>
+                        </div>
+                        <div class="col-6 col-md-3 p-1 bg-gradient border rounded">
+                            <h4>Samedi</h4>
+                            <p class="m-0 text-info">12h - 14h / 17h - 23h</p>
+                        </div>
+                        <div class="col-6 col-md-3 p-1 bg-gradient border rounded">
+                            <h4>Dimanche</h4>
+                            <p class="m-0 text-info">12h - 14h / 17h - 23h</p>
+                        </div>
+                    </div>
+
+                    <h5 class="mt-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#61ad80" class="bi bi-calendar-range" viewBox="0 0 16 16">
+                            <path d="M9 7a1 1 0 0 1 1-1h5v2h-5a1 1 0 0 1-1-1zM1 9h4a1 1 0 0 1 0 2H1V9z"/>
+                            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                        </svg>
+                        Map
+                    </h5>
+
+                    <div id="map" style="height: 400px;width: 100%"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+<script>
+    var mymap = L.map('map').setView([50.405121154977984, 4.440108430736466], 13);
+
+    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+        maxZoom: 18,
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
+            'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        id: 'mapbox/streets-v11',
+        tileSize: 512,
+        zoomOffset: -1
+    }).addTo(mymap);
+
+    L.marker([50.405121154977984, 4.440108430736466]).addTo(mymap);
+</script>
+</body>
+</html>
