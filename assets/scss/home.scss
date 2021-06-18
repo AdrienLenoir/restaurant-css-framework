@@ -1,3 +1,9 @@
+
+.navbar {
+    z-index: 999;
+    background-color: rgba(0,0,0, .7);
+}
+
 .jumbo {
     min-height: 600px !important;
     background-image: url('../images/mamma1.jpg');
@@ -7,4 +13,15 @@
 
 .page {
     background-color: #E8AFA0;
+}
+
+
+
+.card {
+    background-color: rgba(255,230,201,.25);
+}
+
+.social {
+    z-index: 999;
+    background-color: rgba(0,0,0, .7);
 }

@@ -1,6 +1,6 @@
 body {
   background-color: #E8AFA0;
-  font-family: "Merienda", cursive;
+  font-family: 'Merienda', cursive;
 }
 
 .page-title {
@@ -13,13 +13,17 @@ body {
 
 .pictures img {
   min-height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
+
 .pictures .card .card-img-overlay {
   opacity: 0;
   background-color: rgba(146, 125, 106, 0.65);
-  transition: opacity 0.4s ease-in-out;
+  -webkit-transition: opacity .4s ease-in-out;
+  transition: opacity .4s ease-in-out;
 }
+
 .pictures .card:hover .card-img-overlay {
   opacity: 1;
 }
@@ -27,18 +31,31 @@ body {
 .navigation-pagination .pagination .page-link {
   height: 40px;
   width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #404040;
   border-color: rgba(146, 125, 106, 0.25);
   background-color: rgba(255, 230, 201, 0.6);
 }
+
 .navigation-pagination .pagination .page-link i {
   color: #404040;
 }
+
 .navigation-pagination .pagination .active .page-link {
   color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.navbar {
+  z-index: 999;
   background-color: rgba(0, 0, 0, 0.7);
 }
 
@@ -53,15 +70,28 @@ body {
   background-color: #E8AFA0;
 }
 
+.card {
+  background-color: rgba(255, 230, 201, 0.25);
+}
+
+.footer {
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
 .pictures img {
   min-height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
+
 .pictures .card .card-img-overlay {
   opacity: 0;
   background-color: rgba(146, 125, 106, 0.65);
-  transition: opacity 0.4s ease-in-out;
+  -webkit-transition: opacity .4s ease-in-out;
+  transition: opacity .4s ease-in-out;
 }
+
 .pictures .card:hover .card-img-overlay {
   opacity: 1;
 }
@@ -69,25 +99,38 @@ body {
 .navigation-pagination .pagination .page-link {
   height: 40px;
   width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #404040;
   border-color: rgba(146, 125, 106, 0.25);
   background-color: rgba(255, 230, 201, 0.6);
 }
+
 .navigation-pagination .pagination .page-link i {
   color: #404040;
 }
+
 .navigation-pagination .pagination .active .page-link {
   color: white;
   background-color: rgba(0, 0, 0, 0.7);
 }
 
 .restaurant-card h5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .restaurant-card h5 svg {
   margin-right: 6px;
   fill: #D0E09D;
@@ -96,13 +139,14 @@ body {
 }
 
 .calendar .date {
-  border: 2px solid #917d6b !important;
+  border: 2px solid #E8AFA0 !important;
 }
+
 .calendar .date .day {
   color: rgba(0, 0, 0, 0.6);
 }
+
 .calendar .date .hour {
   color: #fffefc;
 }
-
 /*# sourceMappingURL=style.css.map */
