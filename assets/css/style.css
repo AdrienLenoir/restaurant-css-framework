@@ -1,5 +1,5 @@
 body {
-  background-color: #E8AFA0;
+  background-color: #927d6a;
   font-family: "Merienda", cursive;
 }
 
@@ -11,35 +11,31 @@ body {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.pictures img {
-  min-height: 100%;
-  object-fit: cover;
-}
-.pictures .card .card-img-overlay {
-  opacity: 0;
-  background-color: rgba(146, 125, 106, 0.65);
-  transition: opacity 0.4s ease-in-out;
-}
-.pictures .card:hover .card-img-overlay {
-  opacity: 1;
+.social {
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
-.navigation-pagination .pagination .page-link {
-  height: 40px;
-  width: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #404040;
-  border-color: rgba(146, 125, 106, 0.25);
-  background-color: rgba(255, 230, 201, 0.6);
-}
-.navigation-pagination .pagination .page-link i {
-  color: #404040;
-}
-.navigation-pagination .pagination .active .page-link {
-  color: white;
+.navbar {
+  z-index: 999;
   background-color: rgba(0, 0, 0, 0.7);
+}
+.navbar .navbar-logo {
+  font-family: "Pacifico", cursive;
+  margin-right: 50px;
+}
+.navbar .navbar-logo span:nth-child(1) {
+  color: #008e44;
+  margin-right: 10px;
+}
+.navbar .navbar-logo span:nth-child(2) {
+  color: #f7f7f7;
+}
+.navbar .navbar-logo span:nth-child(3) {
+  color: #c82935;
+}
+.navbar .nav-link {
+  font-size: 1.3em;
 }
 
 .jumbo {
@@ -53,6 +49,24 @@ body {
   background-color: #E8AFA0;
 }
 
+.card {
+  background-color: rgba(255, 230, 201, 0.25);
+}
+.card img {
+  height: auto;
+}
+
+.menu-container {
+  background-color: #d0e09d;
+}
+.menu-container ul {
+  text-align: start;
+}
+
+.souscadre {
+  background-color: #ffe6c9;
+}
+
 .pictures img {
   min-height: 100%;
   object-fit: cover;
@@ -84,11 +98,14 @@ body {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-.restaurant-card h5 {
+.restaurant-card {
+  background-color: rgba(255, 230, 201, 0.25);
+}
+.restaurant-card h3 {
   display: flex;
   align-items: center;
 }
-.restaurant-card h5 svg {
+.restaurant-card h3 svg {
   margin-right: 6px;
   fill: #D0E09D;
   height: 20px;

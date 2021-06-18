@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,IAAI,CAAA;EACA,gBAAgB,EAAC,yBAAqB;EACtC,WAAW,EAAE,mBAAmB;CACnC;;AAED,AAAA,OAAO,CAAC;EACJ,OAAO,EAAE,GAAG;EACZ,gBAAgB,EAAE,kBAAe;CACpC",
-    "sources": [
-        "formulaire.scss"
-    ],
-    "names": [],
-    "file": "formulaire.css"
-}

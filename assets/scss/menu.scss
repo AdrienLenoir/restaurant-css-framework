@@ -1,22 +1,11 @@
-body {
-  background-color: #927d6a;
-  font-family: 'Merienda', cursive;
-  font-weight: bolder;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
-}
-
 .menu-container {
   background-color: #d0e09d;
+
+  ul {
+    text-align: start;
+  }
 }
 
 .souscadre {
   background-color: #ffe6c9;
-}
-
-.social {
-  z-index: 999;
-  background-color: rgba(0,0,0, .7);
 }

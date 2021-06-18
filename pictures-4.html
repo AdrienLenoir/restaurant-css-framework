@@ -1,7 +1,9 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Restaurant</title>
+    <title>Galerie - page n°4</title>
+    <meta name="description" content="Galerie photos du restaurant et de nos plats.">
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -14,34 +16,39 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-
 <header>
-    <nav class="navbar navbar-expand-lg navbar-dark p-4" style="background-color: rgba(0,0,0, .7);">
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark p-4">
         <div class="container-fluid">
-            <a class="navbar-brand text-uppercase position-absolute" href="#" style="font-family: 'Pacifico', cursive;margin-right: 50px">
-                <span style="color: #008e44;margin-right: 10px">La  </span>
-                <span style="color: #f7f7f7">mam</span>
-                <span style="color: #c82935">ma</span>
+            <a class="navbar-brand navbar-logo text-uppercase" href="#">
+                <span>La  </span>
+                <span>mam</span>
+                <span>ma</span>
             </a>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active text-white pe-4" style="font-size: 1.3em" aria-current="page" href="index.html">Accueil</a>
+                        <a class="nav-link active text-white pe-4" aria-current="page" href="index.html">Accueil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white pe-4" style="font-size: 1.3em" href="menu.html">Carte</a>
+                        <a class="nav-link text-white pe-4" href="menu.html">Carte</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white pe-4" style="font-size: 1.3em" href="pictures.html">Gallerie</a>
+                        <a class="nav-link text-white pe-4" href="pictures.html">Gallerie</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white pe-4" style="font-size: 1.3em" href="restaurant.html">Infos & Accès</a>
+                        <a class="nav-link text-white pe-4" href="restaurant.html">Infos & Accès</a>
                     </li>
+                </ul>
+
+                <ul class="navbar-nav">
                     <li class="nav-item me-0 pe-0">
-                        <a class="nav-link text-white" style="font-size: 1.3em" href="Formulaire.html">Réservations & Contact</a>
+                        <a class="nav-link text-white" href="Formulaire.html">Réservations & Contact</a>
                     </li>
                 </ul>
             </div>
@@ -87,7 +94,7 @@
     <div class="pictures row g-0 justify-content-start mb-4">
         <div class="col-12 col-md-6">
             <div class="card bg-dark text-white h-100 border-0">
-                <img class="card-img rounded-0" src="assets/images/pictures-10.jpg" alt="Card image">
+                <img class="card-img rounded-0" src="assets/images/pictures-10.jpg" alt="Card image" width="4608" height="3072">
                 <div class="card-img-overlay d-flex justify-content-center flex-column text-center">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -96,7 +103,7 @@
         </div>
         <div class="col-12 col-md-6">
             <div class="card bg-dark text-white h-100 border-0">
-                <img class="card-img rounded-0" src="assets/images/pictures-11.jpg" alt="Card image">
+                <img class="card-img rounded-0" src="assets/images/pictures-11.jpg" alt="Card image" width="5040" height="3360">
                 <div class="card-img-overlay d-flex justify-content-center flex-column text-center">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -106,7 +113,7 @@
 
         <div class="row g-0">
             <div class="card bg-dark text-white h-100 border-0">
-                <img class="card-img rounded-0" src="assets/images/pictures-12.jpg" alt="Card image">
+                <img class="card-img rounded-0" src="assets/images/pictures-12.jpg" alt="Card image" width="4928" height="3264">
                 <div class="card-img-overlay d-flex justify-content-center flex-column text-center">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -115,15 +122,15 @@
         </div>
     </div>
 </main>
+<footer class="social text-center text-white mt-5">
 
-<footer class="text-center text-white mt-5">
-
-    <div class="social container pt-2 pg-0 min-vw-100">
+    <div class="container pt-2 pg-0">
 
         <a
                 class="btn btn-link btn-floating btn-lg text-dark m-1"
                 href="#!"
                 role="button"
+                title="facebook de La Mamma"
                 data-mdb-ripple-color="dark">
 
             <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#3b5998" class="bi bi-facebook" viewBox="0 0 16 16">
@@ -136,6 +143,7 @@
                 class="insta btn btn-link btn-floating btn-lg text-dark m-1"
                 href="#"
                 role="button"
+                title="instagram de La Mamma"
                 data-mdb-ripple-color="dark">
             <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#d6249f " class="bi bi-instagram" viewBox="0 0 16 16">
                 <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
@@ -146,6 +154,7 @@
                 class="btn btn-link btn-floating btn-lg text-dark m-1"
                 href="#!"
                 role="button"
+                title="twitter de La Mamma"
                 data-mdb-ripple-color="dark"
         >
             <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#00acee" class="bi bi-twitter" viewBox="0 0 16 16">
@@ -158,6 +167,7 @@
                 class="btn btn-link btn-floating btn-lg text-dark m-1"
                 href="#!"
                 role="button"
+                title="linkedin de La Mamma"
                 data-mdb-ripple-color="dark"
         >
             <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#0e76a8" class="bi bi-linkedin" viewBox="0 0 16 16">
@@ -167,6 +177,7 @@
         <!--</section>-->
     </div>
 </footer>
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>

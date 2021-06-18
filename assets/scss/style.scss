@@ -1,5 +1,5 @@
 body {
-  background-color: #E8AFA0;
+  background-color: #927d6a;
   font-family: 'Merienda', cursive;
 }
 
@@ -11,7 +11,13 @@ body {
   color: rgba(0,0,0, .6);
 }
 
-@import "pictures.scss";
+.social {
+  z-index: 999;
+  background-color: rgba(0,0,0, .7);
+}
+
+@import "formulaire.scss";
 @import "home.scss";
+@import "menu.scss";
 @import "pictures.scss";
 @import "restaurant.scss";

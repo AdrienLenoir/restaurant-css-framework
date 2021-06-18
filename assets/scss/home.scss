@@ -1,7 +1,27 @@
 
 .navbar {
-    z-index: 999;
-    background-color: rgba(0,0,0, .7);
+  z-index: 999;
+  background-color: rgba(0,0,0, .7);
+
+  .navbar-logo {
+    font-family: 'Pacifico', cursive;
+    margin-right: 50px;
+
+    span:nth-child(1) {
+      color: #008e44;
+      margin-right: 10px;
+    }
+    span:nth-child(2) {
+      color: #f7f7f7;
+    }
+    span:nth-child(3) {
+      color: #c82935;
+    }
+  }
+
+  .nav-link {
+    font-size: 1.3em;
+  }
 }
 
 .jumbo {
@@ -15,13 +35,10 @@
     background-color: #E8AFA0;
 }
 
-
-
 .card {
     background-color: rgba(255,230,201,.25);
-}
 
-.social {
-    z-index: 999;
-    background-color: rgba(0,0,0, .7);
+  img {
+    height: auto;
+  }
 }
